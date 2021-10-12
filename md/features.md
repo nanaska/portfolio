@@ -3,7 +3,7 @@ It may not look like much, but Devii does a lot out of the box.
 **Markdown loading and rendering**: Using Next.js dynamic imports, you can load Markdown files and pass them into your Next.js pages as props. Easy peasy.
 
 **TypeScript + React**: Markdown is great for text-heavy, non-interactive content. For everything else, you'll want something a little more expressive. Devii makes it easy to mix Markdown and React on the same page. Just load your Markdown files with dynamic imports, pass it into your component as a prop, and render it with the `Markdown.tsx` component.
-
+![img](C:\Users\Denis\Desktop\devil\public\img\brook_thumb.jpg)
 **Built-in support for blogs**: Devii provides a utility for parsing Markdown blog posts with frontmatter metadata into a structured TypeScript object. Supported tags include: `title`, `subtitle`, `datePublished`, `tags`, `description`, `canonicalUrl`, `author`, `authorPhoto`, `authorTwitter`, `bannerPhoto`, and `thumbnailPhoto`
 
 **Medium-inspired styles**: The Markdown components (`Markdown.tsx`) contains default styles inspired by Medium.

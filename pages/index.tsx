@@ -8,6 +8,8 @@ const Home = (props: {
   introduction: string;
   features: string;
   obombe: string;
+  chegoyahochu: string;
+  chtoyaumeyu: string;
   readme: string;
   posts: PostData[];
 }) => {
@@ -28,6 +30,18 @@ const Home = (props: {
         <h2>Обо мне</h2>
         <div className="medium-wide">
           <Markdown source={props.obombe} />
+        </div>
+      </div>
+      <div className="section">
+        <h2>Что я хочу</h2>
+        <div className="medium-wide">
+          <Markdown source={props.chegoyahochu} />
+        </div>
+      </div>
+      <div className="section">
+        <h2>Что я умею</h2>
+        <div className="medium-wide">
+          <Markdown source={props.chtoyaumeyu} />
         </div>
       </div>
 
@@ -101,7 +115,9 @@ export default Home;
 export const getStaticProps = async () => {
   const introduction = await loadMarkdownFile("introduction.md");
   const features = await loadMarkdownFile("features.md");
+  const chtoyaumeyu = await loadMarkdownFile("chtoyaumeyu.md");
   const obombe = await loadMarkdownFile("obombe.md");
+  const chegoyahochu = await loadMarkdownFile("chegoyahochu.md");
   const readmeFile = await import(`../${"README.md"}`);
   const readme = readmeFile.default;
   const posts = await loadBlogPosts();
@@ -113,7 +129,9 @@ export const getStaticProps = async () => {
     introduction: introduction.contents,
     features: features.contents,
     obombe: obombe.contents,
+    chegoyahochu: chegoyahochu.contents,
     readme: readme,
+    chtoyaumeyu: chtoyaumeyu.contents,
     posts,
   };
 

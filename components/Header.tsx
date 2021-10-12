@@ -8,10 +8,8 @@ export const Header: React.FC = () => (
       <div className="header">
         <a href="/">{globals.siteName}</a>
         <div className="space" />
-        <a href="https://github.com/nanaska123">GitHub</a>
-        <div className="space" />
-        <a href="/blog/the-ultimate-tech-stack">Motivation</a>
-      </div>{" "}
+        <a href="https://github.com/nanaska">GitHub</a>
+      </div>
     </div>
   </div>
 );

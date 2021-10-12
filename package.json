@@ -4,14 +4,14 @@
   "description": "D.S. Shakhov portfolio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/colinhacks/devii"
+    "url": ""
   },
   "author": "Colin McDonnell <colin@colinhacks.com>",
   "license": "",
   "bugs": {
-    "url": "https://github.com/colinhacks/devii/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/colinhacks/devii",
+  "homepage": "",
   "tags": [
     "blog template",
     "react",
@@ -31,19 +31,24 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
+    "lint": "next lint",
     "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^3.9.2",
+    "@types/react-data-grid": "^4.0.6",
+    "@typescript-eslint/types": "^5.0.0",
+    "canary": "^0.1.5",
     "fecha": "^4.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",
-    "next": "^11.0.0",
+    "next": "11.1.2",
     "raw-loader": "^4.0.1",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-markdown": "^4.3.1",
     "react-syntax-highlighter": "^12.2.1",
+    "react-transition-group": "^1.2.1",
     "rss": "^1.2.2",
     "showdown": "^1.9.1"
   },
@@ -54,7 +59,9 @@
     "@types/react-syntax-highlighter": "^11.0.5",
     "@types/rss": "^0.0.28",
     "@types/showdown": "^1.9.3",
+    "eslint": "8.0.0",
+    "eslint-config-next": "^11.1.2",
     "favicons": "^6.1.0",
-    "typescript": "^3.8.3"
+    "typescript": "^4.4.4"
   }
 }

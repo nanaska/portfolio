@@ -34,6 +34,7 @@
     "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^3.9.2",
     "fecha": "^4.2.0",
     "glob": "^7.1.6",
     "gray-matter": "^4.0.2",

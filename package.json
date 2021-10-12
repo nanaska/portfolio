@@ -35,7 +35,6 @@
     "deploy": "next build && next export && firebase deploy --only hosting"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^3.9.2",
     "@types/react-data-grid": "^4.0.6",
     "@typescript-eslint/types": "^5.0.0",
     "canary": "^0.1.5",

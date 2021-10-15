@@ -1,19 +1,19 @@
 ---
-title: Dan Abramov knows about Devii
+title: Мой первый сайт
 published: true
-datePublished: 1594425078471
-author: Colin McDonnell
+datePublished: 1634291074307
+author: Denis Shakhov
 tags:
-  - Dan Abramov
-authorPhoto: /img/BoJn_wFU3Dg.jpg
-bannerPhoto: /img/danabramov.png
-thumbnailPhoto: /img/danabramov_thumb.png
-canonicalUrl: https://devii.dev/blog/dan-abramov
+  - Сагай Данилов.
+authorPhoto: /img/2AZtHP7ci-s.jpg
+bannerPhoto:
+thumbnailPhoto: /img/2AZtHP7ci-s.jpg
+canonicalUrl:
 ---
 
-Dan Abramov knows about Devii!
-
-> Seems like it might be useful!
-> — Dan Abramov, taken entirely out of context
-
-I don't want to brag, but Devii is kind of a big deal.
+Мой первый сайт для ресторана **Сагай** в **Данилове**.
+Он сделан на **react** + **nest js**(get запрос на еду).
+Так как это мой первый проект это было сложно,
+но с горем пополам я справился. Из нереализованных фич осталось
+сделать отправление заказа в телеграмм канал(На половину сделано :))
+// ссылка

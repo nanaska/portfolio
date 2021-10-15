@@ -21,40 +21,36 @@ const Home = (props: {
       </Head>
 
       <div className="introduction">
-        <h1>Привет! Это мое портфолио, тут вы можете со мной познакомиться</h1>
+        <h1>
+          Привет! 🙋‍♂️
+          <br />
+          Это мое портфолио, тут вы можете со мной познакомиться 🗒️
+        </h1>
         <br />
         <hr />
       </div>
 
       <div className="section">
-        <h2>Обо мне</h2>
+        <h2>Обо мне🧙‍♂️</h2>
         <div className="medium-wide">
           <Markdown source={props.obombe} />
         </div>
       </div>
       <div className="section">
-        <h2>Что я хочу</h2>
+        <h2>Что я хочу🤖</h2>
         <div className="medium-wide">
           <Markdown source={props.chegoyahochu} />
         </div>
       </div>
       <div className="section">
-        <h2>Что я умею</h2>
+        <h2>Что я умею📖</h2>
         <div className="medium-wide">
           <Markdown source={props.chtoyaumeyu} />
         </div>
       </div>
-
+      <hr />
       <div className="section">
-        <h2>My blog posts</h2>
-        <p>
-          This section demonstrates the power of dynamic imports. Every Markdown
-          file under <code>/md/blog</code> is automatically parsed into a
-          structured TypeScript object and available in the{" "}
-          <code>props.posts</code> array. These blog post "cards" are
-          implemented in the
-          <code>/components/PostCard.tsx</code> component.
-        </p>
+        <h1>Мои проекты</h1>
         <div className="post-card-container">
           {props.posts.map((post, j) => {
             return <PostCard post={post} key={j} />;
@@ -99,13 +95,6 @@ const Home = (props: {
           <Markdown source={props.readme} />
         </div>
       </div> */}
-
-      <div className="section alternate">
-        <h2 className="centered">Get started</h2>
-        <a href="https://github.com/colinhacks/devii">
-          <button className="fork-button">Go to README</button>
-        </a>
-      </div>
     </div>
   );
 };

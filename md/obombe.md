@@ -3,4 +3,4 @@
 
 ## Вот так я выгляжу🕶️
 
-![alt tag](https://sun9-30.userapi.com/impg/uRhZyDXG2ZIpNtVpcvIoR0U_Ju6oLqKIdbpp6w/2AZtHP7ci-s.jpg?size=434x652&quality=95&sign=12c2f3cb9cce856dcaa73b5747a3b22b&type=album)
+<img src="https://sun9-35.userapi.com/impg/qlmutoxX7L01Ej6q130qaLOWuZokyRRvJ7q9EQ/AK7ozcisfIg.jpg?size=810x1080&quality=96&sign=1388e5434bf8e312755184c028522594&type=album" alt="drawing" style="width:30rem;"/>

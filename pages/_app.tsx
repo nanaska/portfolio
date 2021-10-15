@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { globals } from "../globals";
 import { Header } from "../components/Header";
 import "../styles/base.css";
+import { ThemeProvider } from "next-themes";
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
@@ -29,9 +30,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           ></script>
         )}
       </Head>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <ThemeProvider>
+        <Header />
+
+        <Component {...pageProps} />
+
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 };

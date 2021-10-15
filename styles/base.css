@@ -14,17 +14,14 @@
 html,
 body,
 #__next {
-  scroll-behavior: smooth;
   min-height: 100%;
   padding: 0;
   margin: 0;
-  user-select: none;
+
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-fagegea {
-  width: 10px;
-}
+
 * {
   box-sizing: border-box;
 }
@@ -223,17 +220,37 @@ hr {
   margin: auto;
 }
 
-.fork-button {
-  background-color: turquoise;
+.fork-buttonlight {
+  background-color: var(--backcolor);
   border-radius: 10px;
   border: none;
-  color: white;
+  color: var(--textcolor);
   font-size: 14pt;
-  padding: 10px 30px;
+  padding: 3px 10px;
   cursor: pointer;
+  transition: 0.1s ease-in;
 }
-.fork-button:hover {
-  background-color: mediumturquoise;
+.fork-buttonlight:hover {
+  background-color: var(--textcolor);
+  color: var(--backcolor);
+}
+.fork-buttondark {
+  background-color: var(--backcolor);
+  border-radius: 10px;
+  border: none;
+  color: var(--textcolor);
+  font-size: 14pt;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+.fork-buttondark:hover {
+  background-color: var(--textcolor);
+  color: var(--backcolor);
+}
+.active {
+  background-color: var(--textcolor);
+  color: var(--backcolor);
 }
 
 .author-container {

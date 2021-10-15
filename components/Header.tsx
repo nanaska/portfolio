@@ -16,8 +16,8 @@ export const Header: React.FC = () => {
           <div className="space" />
           <a href="https://github.com/nanaska">GitHub</a>
           <div className="space" />
-
-          <a href="#post-card-container">Projects</a>
+          <a href="#post-card-container">Projects</a> <hr />
+          <div>now used {theme} theme</div>
           <div className="changeTheme">
             <button onClick={() => setTheme("light")}>Light Mode</button>
             <button onClick={() => setTheme("dark")}>Dark Mode</button>

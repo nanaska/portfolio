@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
           <div className="space" />
           <a href="https://github.com/nanaska">GitHub</a>
           <div className="space" />
-          <a href="#post-card-container">Projects</a>
+          <a href="#id">Projects</a>
           <div className="space" />
           <div className="changeTheme">
             <button

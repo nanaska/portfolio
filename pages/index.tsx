@@ -50,7 +50,7 @@ const Home = (props: {
       </div>
       <hr />
       <div className="section">
-        <h1>Мои проекты</h1>
+        <h1 id="id">Мои проекты</h1>
         <div className="post-card-container">
           {props.posts.map((post, j) => {
             return <PostCard post={post} key={j} />;

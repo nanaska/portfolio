@@ -37,6 +37,7 @@
   "dependencies": {
     "@types/react-data-grid": "^4.0.6",
     "@typescript-eslint/types": "^5.0.0",
+    "@vkontakte/icons": "^1.129.0",
     "canary": "^0.1.5",
     "fecha": "^4.2.0",
     "glob": "^7.1.6",

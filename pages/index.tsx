@@ -3,6 +3,8 @@ import { generateRSS } from "../rssUtil";
 import { Markdown } from "../components/Markdown";
 import { PostData, loadBlogPosts, loadMarkdownFile } from "../loader";
 import { PostCard } from "../components/PostCard";
+import React from "react";
+import Footer from "../components/Footer";
 
 const Home = (props: {
   introduction: string;
@@ -14,69 +16,70 @@ const Home = (props: {
   posts: PostData[];
 }) => {
   return (
-    <div className="content">
-      <Head>
-        <title>Портфолио Д.С ШАХОВ</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <div className="content">
+        <Head>
+          <title>Портфолио Д.С ШАХОВ</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <div className="introduction">
-        <h1>
-          Привет! 🙋‍♂️
+        <div className="introduction">
+          <h1>
+            Привет! 🙋‍♂️
+            <br />
+            Это мое портфолио, тут вы можете со мной познакомиться 🗒️
+          </h1>
           <br />
-          Это мое портфолио, тут вы можете со мной познакомиться 🗒️
-        </h1>
-        <br />
+          <hr />
+        </div>
+
+        <div className="section">
+          <h2>Обо мне🧙‍♂️</h2>
+          <div className="medium-wide">
+            <Markdown source={props.obombe} />
+          </div>
+        </div>
+        <div className="section">
+          <h2>Что я хочу🤖</h2>
+          <div className="medium-wide">
+            <Markdown source={props.chegoyahochu} />
+          </div>
+        </div>
+        <div className="section">
+          <h2>Что я умею📖</h2>
+          <div className="medium-wide">
+            <Markdown source={props.chtoyaumeyu} />
+          </div>
+        </div>
         <hr />
-      </div>
+        <div className="section">
+          <h1 id="id">Мои проекты</h1>
+          <div className="post-card-container">
+            {props.posts.map((post, j) => {
+              return <PostCard post={post} key={j} />;
+            })}
+          </div>
+        </div>
 
-      <div className="section">
-        <h2>Обо мне🧙‍♂️</h2>
-        <div className="medium-wide">
-          <Markdown source={props.obombe} />
+        <div className="section">
+          <h2>Время фактов</h2>
+          <blockquote>
+            <p>
+              <em>
+                Этот сайт написан на{" "}
+                <a href="https://nextjs.org/" className="siniy">
+                  Next js
+                </a>{" "}
+                +{" "}
+                <a href="https://github.com/colinhacks/devii" className="siniy">
+                  Devii
+                </a>
+              </em>
+            </p>
+          </blockquote>
         </div>
-      </div>
-      <div className="section">
-        <h2>Что я хочу🤖</h2>
-        <div className="medium-wide">
-          <Markdown source={props.chegoyahochu} />
-        </div>
-      </div>
-      <div className="section">
-        <h2>Что я умею📖</h2>
-        <div className="medium-wide">
-          <Markdown source={props.chtoyaumeyu} />
-        </div>
-      </div>
-      <hr />
-      <div className="section">
-        <h1 id="id">Мои проекты</h1>
-        <div className="post-card-container">
-          {props.posts.map((post, j) => {
-            return <PostCard post={post} key={j} />;
-          })}
-        </div>
-      </div>
 
-      <div className="section">
-        <h2>Время фактов</h2>
-        <blockquote>
-          <p>
-            <em>
-              Этот сайт написан на{" "}
-              <a href="https://nextjs.org/" className="siniy">
-                Next js
-              </a>{" "}
-              +{" "}
-              <a href="https://github.com/colinhacks/devii" className="siniy">
-                Devii
-              </a>
-            </em>
-          </p>
-        </blockquote>
-      </div>
-
-      {/* <div className="section">
+        {/* <div className="section">
         <h2>README.md</h2>
         <p>
           Below is the README.md for devii. It was imported and rendered using
@@ -90,12 +93,14 @@ const Home = (props: {
         </p>
       </div> */}
 
-      {/* <div className="section alternate">
+        {/* <div className="section alternate">
         <div className="narrow">
           <Markdown source={props.readme} />
         </div>
       </div> */}
-    </div>
+      </div>
+      <Footer />
+    </>
   );
 };
 

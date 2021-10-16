@@ -143,8 +143,22 @@ a:visited {
 .space {
   min-width: 20px;
 }
+.contacti {
+  align-items: center;
+  margin: auto;
+  height: 90vh;
+}
+.textcontact {
+  margin-top: 40vh;
+}
+
+.spaceq {
+  min-width: 5px;
+}
+
 .header,
 .footer {
+  align-items: center;
   padding: 1rem 0 0 0rem;
   max-width: 550px;
   margin: auto;
@@ -231,6 +245,9 @@ hr {
   cursor: pointer;
   transition: 0.1s ease-in;
 }
+.gitproj {
+  display: inline-block;
+}
 .fork-buttonlight:hover {
   background-color: var(--textcolor);
   color: var(--backcolor);
@@ -280,7 +297,11 @@ hr {
   margin: 2px;
   padding: 0;
 }
+.floatright {
+  margin-left: auto;
 
+  display: inline;
+}
 .author-line.subtle {
   opacity: 0.6;
 }

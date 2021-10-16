@@ -20,7 +20,7 @@ const Home = (props: {
       <div className="content">
         <Head>
           <title>Портфолио Д.С ШАХОВ</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/img/smart-human.png" />
         </Head>
 
         <div className="introduction">

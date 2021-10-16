@@ -5,7 +5,7 @@
 }
 
 [data-theme="dark"] {
-  --backcolor: #333;
+  --backcolor: #232323;
   --textcolor: white;
 }
 .changeTheme {

@@ -10,13 +10,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
   return (
     <div className="container">
       <Head>
-        {globals.googleAnalyticsId && (
+        {
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-YXLJHRMD71`}
           ></script>
-        )}
-        {globals.googleAnalyticsId && (
+        }
+        {
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -24,11 +24,11 @@ const App: React.FC = ({ Component, pageProps }: any) => {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('globals', '${globals.googleAnalyticsId}');
+            gtag('globals', 'G-YXLJHRMD71');
             `,
             }}
           ></script>
-        )}
+        }
       </Head>
       <ThemeProvider>
         <Header />

@@ -22,6 +22,7 @@ export const Header: React.FC = () => {
       setToggle(false);
     }
   }
+
   React.useEffect(() => {
     var width = screen.availWidth;
 

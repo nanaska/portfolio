@@ -6,7 +6,7 @@ export default function contact() {
           <div className="contacti">
             <div className="devii-markdown">
               <div className="textcontact">
-                <h1>denis_shakhov@vk.com</h1>
+                <h2>denis_shakhov@vk.com</h2>
               </div>
             </div>
           </div>

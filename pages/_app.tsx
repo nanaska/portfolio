@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 
-import { globals } from "../globals";
 import { Header } from "../components/Header";
 import "../styles/base.css";
 import { ThemeProvider } from "next-themes";

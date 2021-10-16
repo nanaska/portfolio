@@ -10,7 +10,6 @@ import Vk from "../public/img/vk.png";
 import Mail from "../public/img/arroba.png";
 export const Header: React.FC = () => {
   const [uznatWidth, setUznatWidth] = useState(true);
-  const [width, setWidth] = useState(0);
   const { theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false);
   React.useEffect(() => {

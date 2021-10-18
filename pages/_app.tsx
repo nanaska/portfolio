@@ -9,6 +9,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
   return (
     <div className="container">
       <Head>
+        <meta name="yandex-verification" content="52aefc2f495cb2a7" />
+        <link rel="icon" href="/img/smart-human.png" />
+        <meta
+          name="keywords"
+          content="Портфолио Шахов Денис, Шахов Денис Портфолио, портфолио, шахов, денис, шахов денис, Портфолио Д.С
+     "
+        />
         {
           <script
             async

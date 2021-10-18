@@ -21,6 +21,11 @@ const Home = (props: {
         <Head>
           <title>Портфолио Д.С ШАХОВ</title>
           <link rel="icon" href="/img/smart-human.png" />
+          <meta
+            name="keywords"
+            content="Портфолио Шахов Денис, Шахов Денис Портфолио, портфолио, шахов, денис, шахов денис, Портфолио Д.С
+     "
+          />
         </Head>
 
         <div className="introduction">

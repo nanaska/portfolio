@@ -1,8 +1,8 @@
 export namespace globals {
-  export const yourName = "D.S. Shakhov";
-  export const siteName = "Portfolio";
+  export const yourName = "Денис Шахов";
+  export const siteName = "Портфолио";
   export const siteDescription =
-    "This my portfolio about me like human, like worker, like person";
+    "Этот сайт расскажет обо мне. Шахов Денис Портфолио";
   export const siteCreationDate = "October 12, 2021 15:00:00 GMT";
   export const twitterHandle = "@dshakhov0";
   export const email = "denis_shakhov@vk.com";
